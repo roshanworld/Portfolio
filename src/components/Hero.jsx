@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 md:px-10 py-10 border-t hairline">
+      <section className=" scroll-mt-20 max-w-6xl mx-auto px-6 md:px-10 py-10 border-t hairline">
         <p className="max-w-2xl leading-relaxed" style={{ color: 'var(--text-dim)' }}>
           Seeking a web development internship where I can work on real-world applications,
           improve my engineering skills, and contribute to meaningful products.

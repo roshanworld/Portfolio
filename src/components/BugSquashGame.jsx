@@ -53,7 +53,7 @@ export default function BugSquashGame() {
         if (p.touches && p.touches.length > 0) {
           touchX = p.touches[0].x;
         }
-        return false; // stop the page from scrolling while playing
+        // return false; // stop the page from scrolling while playing
       };
       p.touchStarted = () => {
         if (hudRef.current.over) {
@@ -62,7 +62,7 @@ export default function BugSquashGame() {
         if (p.touches && p.touches.length > 0) {
           touchX = p.touches[0].x;
         }
-        return false;
+        // return false;
       };
       p.touchEnded = () => {
         touchX = null;

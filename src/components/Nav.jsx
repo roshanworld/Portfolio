@@ -3,10 +3,10 @@ import { Menu, X } from 'lucide-react';
 import { useNav } from '../Context/Navcontext';
 
 const LINKS = [
-  { href: 'work', label: 'work' },
-  { href: 'skills', label: 'skills' },
-  { href: 'play', label: 'play' },
-  { href: 'contact', label: 'contact' },
+  { href: '#work', label: 'work' },
+  { href: '#skills', label: 'skills' },
+  { href: '#play', label: 'play' },
+  { href: '#contact', label: 'contact' },
 ];
 
 export default function Nav() {

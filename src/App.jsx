@@ -23,7 +23,8 @@ export default function App() {
         <Projects />
         <Skills />
 
-        <section id="play" className="max-w-6xl mx-auto px-6 md:px-10 py-10 border-t hairline">
+        {/* <section id="play" className="max-w-6xl mx-auto px-6 md:px-10 py-10 border-t hairline"> */}
+        <section id="play" className="scroll-mt-20 max-w-6xl mx-auto px-6 md:px-10 py-10 border-t hairline">
           <h2 className="font-display text-2xl mb-3">Squash the bug</h2>
           <p className="max-w-md leading-relaxed mb-6" style={{ color: 'var(--text-dim)' }}>
             A small p5.js break. Move the paddle with your mouse or the arrow keys and catch the
