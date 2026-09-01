@@ -35,6 +35,7 @@ export default function BugSquashGame() {
       p.setup = () => {
         const { w, h } = size();
         p.createCanvas(w, h);
+        p.canvas.style.display = 'block'; //added
         paddleW = w < 420 ? 54 : 70;
         paddleX = w / 2;
         resetGame();
@@ -163,7 +164,7 @@ export default function BugSquashGame() {
   }, [ready]);
 
   return (
-    <div ref={hostRef} className="w-full h-72 md:h-80" style={{ background: 'var(--bg)' }}>
+    <div ref={hostRef} className="w-full h-72 md:h-80" style={{ background: 'var(--bg)', position: 'relative' }}>
       {!ready && (
         <div className="w-full h-full flex items-center justify-center">
           <span className="font-mono text-xs" style={{ color: 'var(--text-dim)' }}>
