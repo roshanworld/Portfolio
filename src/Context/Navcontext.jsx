@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useCallback, useMemo } from 'react';
 
-const NavContext = createContext(null);
+const Navcontext = createContext(null);
 
 /**
  * Wraps the app and owns the mobile-nav open/closed state so any
@@ -19,11 +19,11 @@ export function NavProvider({ children }) {
     [mobileOpen, openMenu, closeMenu, toggleMenu]
   );
 
-  return <NavContext.Provider value={value}>{children}</NavContext.Provider>;
+  return <Navcontext.Provider value={value}>{children}</Navcontext.Provider>;
 }
 
 export function useNav() {
-  const ctx = useContext(NavContext);
+  const ctx = useContext(Navcontext);
   if (!ctx) {
     throw new Error('useNav must be used within a NavProvider');
   }
